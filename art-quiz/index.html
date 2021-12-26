@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/svg/stars.svg" rel="shortcut icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Forum:regular,700" rel="stylesheet" />
+    <title>Art Quiz</title>
+</head>
+<body>
+    <div class="settings-menu">
+        <div class="exit-button"></div>
+        <div class="settings-container">
+            <div class="settings-option">
+                <h2>Volume</h2>
+                <div class="volume-container">
+                    <div class="volume-button"></div>
+                    <input type="range" class="volume-range" value="50" min="0" max="100" step="1" style="background: linear-gradient(to right,rgb(245, 148, 216)  0%, rgb(245, 148, 216) 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 100%);">
+                </div>
+            </div>
+            <div class="settings-option">
+                <h2>Time game</h2>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="settings-option">
+                <h2>Time to answer</h2>
+                <div style="display: flex; align-items: center;">
+                    <button class="round-time_button">-</button>
+                    <input type="number" min="5" max="30" value="5" step="5" class="round-time" readonly>
+                    <button class="round-time_button">+</button>
+                </div>
+            </div>
+            <div class="settings-option">
+                <h2>Accent color</h2>
+                <div style="display: flex; align-items: center;">
+                    <input type="color" value="#f594d8" class="input-color">
+                </div>
+            </div>
+            <div class="main-buttons_container">
+                <div class="settings-button_main default-button">Default</div>
+                <div class="settings-button_main save-button">Save</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="quiz-page picture-quiz">
+        <h2 class="home-button">Home</h2>
+        <div class="hide-border">
+            <div class="rounds-container">
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 1</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/1.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 2</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/2.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 3</p>
+                        <p class="score">
+                        </p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/3.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 4</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/4.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 5</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/5.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 6</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/6.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 7</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/7.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 8</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/8.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 9</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/9.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 10</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/10.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 11</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/11.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 12</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/artists/12.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quiz-page artist-quiz">
+        <h2 class="home-button">Home</h2>
+        <div class="hide-border">
+            <div class="rounds-container">
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 1</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/1.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 2</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/2.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 3</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/3.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 4</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/4.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 5</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/5.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 6</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/6.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 7</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/7.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 8</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/8.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 9</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/9.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 10</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/10.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 11</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/11.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+                <div class="round-cell">
+                    <div style="display: flex; justify-content: space-between;">
+                        <p>Round 12</p>
+                        <p class="score"></p>
+                    </div>
+                    <div class="round-image" style="background-image: url(./assets/pictures/12.jpg);">
+                        <div class="score-button">Score</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="settings-button"></div>
+    </header>
+    <main>
+        <div class="logo"></div>
+        <div class="logo-buttons">
+            <div class="quiz-button">Pictures Quiz</div>
+            <div class="quiz-button">Artists Quiz</div>
+        </div>
+    </main>
+    <footer>
+        <a class="rsschool" href="https://rs.school/js/" target="_blink"></a>
+        <div style="display: flex; align-items: center;">
+            <a class="github" href="https://github.com/AvlasenkoPetr" target="_blink"></a>
+            <div>2021</div>
+        </div>
+    </footer>
+</body>
+<script src="./js/main-menu.js"></script>
+<script src="./js/questions.js"></script>
+<script src="./js/score.js"></script>
+<script src="./js/localstorage.js"></script>
+</html>
